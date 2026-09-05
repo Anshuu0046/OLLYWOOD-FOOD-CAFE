@@ -1,0 +1,6 @@
+{
+  "name": "Ollywood Food Café",
+  "description": "The Taste That Everybody Loves To Taste. In-café dine-in table ordering system with automatic Kitchen POS relay, KOT ticketing, and instant digital soft-copy receipts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "log-1788615098887-646",
+    "timestamp": "2026-09-05T13:31:38.887Z",
+    "type": "EMAIL_AUTO",
+    "orderId": "OW-55937",
+    "kotNumber": 105,
+    "tableNumber": "T-04",
+    "status": "AUTOMATED",
+    "message": "Automated Bill PDF queued for delivery to guest@ollywoodcafe.in"
+  },
+  {
+    "id": "log-1788615098887-379",
+    "timestamp": "2026-09-05T13:31:38.887Z",
+    "type": "WHATSAPP_AUTO",
+    "orderId": "OW-55937",
+    "kotNumber": 105,
+    "tableNumber": "T-04",
+    "status": "AUTOMATED",
+    "message": "Automated e-bill sent in background to WhatsApp (+919437123456) with Bill PDF: https://ais-dev-7nypp3rfzl2d6qogztyk5h-228887862289.asia-east1.run.app/api/orders/OW-55937/pdf"
+  },
+  {
+    "id": "log-1788615098886-930",
+    "timestamp": "2026-09-05T13:31:38.887Z",
+    "type": "KDS_TERMINAL",
+    "orderId": "OW-55937",
+    "kotNumber": 105,
+    "tableNumber": "T-04",
+    "status": "SUCCESS",
+    "message": "Order broadcasted to in-cafe Kitchen Display & POS screens for T-04 (₹314)"
+  },
+  {
+    "id": "log-1788613739273-177",
+    "timestamp": "2026-09-05T13:08:59.273Z",
+    "type": "KDS_TERMINAL",
+    "orderId": "OW-67650",
+    "kotNumber": 104,
+    "tableNumber": "Rooftop 01",
+    "status": "SUCCESS",
+    "message": "Order broadcasted to in-cafe Kitchen Display & POS screens for Rooftop 01 (₹441)"
+  },
+  {
+    "id": "log-1788597697079-427",
+    "timestamp": "2026-09-05T08:41:37.079Z",
+    "type": "KDS_TERMINAL",
+    "orderId": "OW-99599",
+    "kotNumber": 103,
+    "tableNumber": "Hall T-02",
+    "status": "SUCCESS",
+    "message": "Order broadcasted to in-cafe Kitchen Display & POS screens for Hall T-02 (₹294)"
+  }
+]

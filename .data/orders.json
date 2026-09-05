@@ -1,0 +1,87 @@
+[
+  {
+    "orderId": "OW-55937",
+    "kotNumber": 105,
+    "tableNumber": "T-04",
+    "customerName": "Soumya Ranjan",
+    "customerPhone": "9437123456",
+    "customerEmail": "guest@ollywoodcafe.in",
+    "paymentMethod": "UPI",
+    "paymentStatus": "Paid",
+    "items": [
+      {
+        "id": 1,
+        "name": "Mutton Dum Biryani",
+        "price": 299,
+        "type": "Non-Veg",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 299,
+    "discount": 0,
+    "taxes": 15,
+    "total": 314,
+    "status": "Received",
+    "createdAt": "2026-09-05T13:31:38.886Z",
+    "isDineIn": true,
+    "automatedReceiptDispatched": true
+  },
+  {
+    "orderId": "OW-67650",
+    "kotNumber": 104,
+    "tableNumber": "Rooftop 01",
+    "customerName": "Anshuman",
+    "customerPhone": "7008282041",
+    "customerEmail": "swayamshree16@gmail.com",
+    "paymentMethod": "Pay at Cashier Desk",
+    "paymentStatus": "Unpaid",
+    "items": [
+      {
+        "id": 201,
+        "name": "Mutton Do Pyaza",
+        "price": 210,
+        "type": "Non-Veg",
+        "quantity": 1
+      },
+      {
+        "id": 202,
+        "name": "Mutton Butter Masala",
+        "price": 210,
+        "type": "Non-Veg",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 420,
+    "discount": 0,
+    "taxes": 21,
+    "total": 441,
+    "status": "Received",
+    "createdAt": "2026-09-05T13:08:59.272Z",
+    "isDineIn": true
+  },
+  {
+    "orderId": "OW-21188",
+    "kotNumber": 102,
+    "tableNumber": "Hall T-05",
+    "customerName": "Anshuman",
+    "customerPhone": "7008282041",
+    "paymentMethod": "Pay at Cashier Desk",
+    "paymentStatus": "Unpaid",
+    "items": [
+      {
+        "id": 211,
+        "name": "Mutton Home Style",
+        "price": 200,
+        "type": "Non-Veg",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 200,
+    "discount": 0,
+    "taxes": 10,
+    "total": 210,
+    "status": "Received",
+    "createdAt": "2026-09-05T08:33:55.777Z",
+    "isDineIn": true
+  }
+]

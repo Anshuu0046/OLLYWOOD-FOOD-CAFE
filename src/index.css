@@ -1,0 +1,219 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-headline: "Playfair Display", Georgia, serif;
+  --font-body: "Plus Jakarta Sans", system-ui, sans-serif;
+
+  --color-editorial-paper: #FDFCFB;
+  --color-editorial-ink: #1A1A1A;
+  --color-editorial-stone: #E8E6E1;
+  --color-editorial-neutral: #D1CFCA;
+  --color-editorial-accent: #9E2A2B;
+}
+
+:root {
+  --bg-primary: #FDFCFB;
+  --bg-secondary: #F4F2ED;
+  --bg-card: #FFFFFF;
+  --bg-muted: #E8E6E1;
+  --border-primary: #1A1A1A;
+  --border-secondary: #E0DDD6;
+  --border-subtle: #ECE8E1;
+  --text-primary: #1A1A1A;
+  --text-secondary: #5C5852;
+  --text-muted: #8C8880;
+  --dot-color: #1A1A1A;
+}
+
+.dark {
+  --bg-primary: #121212;
+  --bg-secondary: #1A1A1A;
+  --bg-card: #202020;
+  --bg-muted: #282828;
+  --border-primary: #3E3E3E;
+  --border-secondary: #2C2C2C;
+  --border-subtle: #222222;
+  --text-primary: #FDFCFB;
+  --text-secondary: #B5B2AA;
+  --text-muted: #7E7B74;
+  --dot-color: #555555;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.font-serif-headline {
+  font-family: var(--font-headline);
+}
+
+.editorial-dot-pattern {
+  background-image: radial-gradient(var(--dot-color) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--bg-muted);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--text-primary);
+}
+
+/* ================= DARK MODE REFINED ADAPTATION ================= */
+html.dark {
+  color-scheme: dark;
+}
+
+html.dark body {
+  background-color: #121212;
+  color: #FDFCFB;
+}
+
+/* Base Light Background Overrides in Dark Mode */
+html.dark .bg-\[\#FDFCFB\] {
+  background-color: #121212 !important;
+}
+
+html.dark .bg-\[\#FAF9F5\] {
+  background-color: #191919 !important;
+}
+
+html.dark .bg-\[\#F5F3EF\],
+html.dark .bg-\[\#F4F2ED\] {
+  background-color: #1A1A1A !important;
+}
+
+html.dark .bg-\[\#E8E6E1\] {
+  background-color: #1D1D1D !important;
+}
+
+html.dark .bg-\[\#D1CFCA\] {
+  background-color: #262626 !important;
+}
+
+html.dark .bg-white {
+  background-color: #1A1A1A !important;
+}
+
+html.dark .bg-neutral-50,
+html.dark .bg-neutral-100 {
+  background-color: #202020 !important;
+}
+
+/* Text Overrides in Dark Mode */
+html.dark .text-\[\#1A1A1A\] {
+  color: #F5F4F0 !important;
+}
+
+html.dark .text-\[\#1A1A1A\]\/80,
+html.dark .text-\[\#1A1A1A\]\/75,
+html.dark .text-\[\#1A1A1A\]\/70 {
+  color: #D3D0C8 !important;
+}
+
+html.dark .text-\[\#1A1A1A\]\/60,
+html.dark .text-\[\#1A1A1A\]\/50 {
+  color: #A3A096 !important;
+}
+
+html.dark .text-neutral-900,
+html.dark .text-neutral-800 {
+  color: #FDFCFB !important;
+}
+
+html.dark .text-neutral-700,
+html.dark .text-neutral-600 {
+  color: #C5C2B9 !important;
+}
+
+/* Border Overrides in Dark Mode */
+html.dark .border-\[\#1A1A1A\] {
+  border-color: #383838 !important;
+}
+
+html.dark .border-\[\#1A1A1A\]\/40,
+html.dark .border-\[\#1A1A1A\]\/30,
+html.dark .border-\[\#1A1A1A\]\/20,
+html.dark .border-\[\#1A1A1A\]\/15,
+html.dark .border-\[\#1A1A1A\]\/10 {
+  border-color: #2E2E2E !important;
+}
+
+html.dark .border-neutral-200,
+html.dark .border-neutral-300 {
+  border-color: #2E2E2E !important;
+}
+
+/* Inputs & Form Controls in Dark Mode */
+html.dark input:not([type="checkbox"]):not([type="radio"]),
+html.dark textarea,
+html.dark select {
+  background-color: #1E1E1E !important;
+  color: #FDFCFB !important;
+  border-color: #383838 !important;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color: #7A7770 !important;
+}
+
+/* Inverted accents for buttons that were solid #1A1A1A in light */
+html.dark button.bg-\[\#1A1A1A\]:not([id*="nav-pos"]):not([id*="floating-pos"]) {
+  background-color: #FDFCFB !important;
+  color: #121212 !important;
+}
+
+html.dark button.bg-\[\#1A1A1A\]:not([id*="nav-pos"]):not([id*="floating-pos"]) svg {
+  color: #121212 !important;
+}
+
+html.dark button.bg-\[\#1A1A1A\]:hover:not([id*="nav-pos"]):not([id*="floating-pos"]) {
+  background-color: #E8E6E1 !important;
+}
+
+/* Nav Logo button text */
+html.dark #nav-logo-btn span.font-serif {
+  color: #FDFCFB !important;
+}
+
+/* Ensure main navbar has solid background in dark mode */
+html.dark header#main-navbar {
+  background-color: rgba(18, 18, 18, 0.96) !important;
+  border-bottom-color: #2E2E2E !important;
+}
+
+/* Ensure mobile nav drawer is dark */
+html.dark #mobile-nav-drawer {
+  background-color: #161616 !important;
+  border-bottom-color: #2E2E2E !important;
+}
+
+/* Ensure footer has deep obsidian tone */
+html.dark footer#main-footer {
+  background-color: #0E0E0E !important;
+  border-top-color: #222222 !important;
+}
+
+/* Theme dropdown */
+html.dark #theme-dropdown-menu {
+  background-color: #1A1A1A !important;
+  border-color: #333333 !important;
+}
+
+
+
+
