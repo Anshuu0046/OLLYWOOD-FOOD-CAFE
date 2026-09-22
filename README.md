@@ -33,10 +33,11 @@ The project focuses on a clean visual interface, easy menu discovery, and a smoo
 ## 📸 Preview
 
 <p align="center">
-  <img src="https://via.placeholder.com/1200x600?text=Ollywood+Food+Cafe+Preview" alt="Ollywood Food Cafe Preview">
+  <img src="<img width="1917" height="870" alt="image" src="https://github.com/user-attachments/assets/d6e6d7fd-ec23-4868-b35c-ee5c55389e6a" />
+" alt="Ollywood Food Cafe Preview">
 </p>
 
-> Replace the image above with a screenshot of your website for a much better GitHub presentation.
+
 
 ---
 
